@@ -1,8 +1,8 @@
 # Basic Information 
-title: Yuseung "Phillip" Lee
-position: M.S. Student
-affiliation: KAIST Graduate School of AI
-email: phillip0701 (at) kaist.ac.kr
+title: Sangwoo Youn
+position: Undergraduate Student
+affiliation: KAIST
+email: andy2884 (at) kaist.ac.kr
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
@@ -38,7 +38,7 @@ font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
+# google_analytics: UA-111540567-4
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
