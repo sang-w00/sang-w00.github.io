@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="NYC trip icon">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cc5b46" />
+      <stop offset="100%" stop-color="#33658a" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#f4efe6" />
+  <path
+    d="M24 90h80v10H24zm9-13h12V55H33zm18 0h12V42H51zm18 0h12V30H69zm18 0h12V48H87z"
+    fill="url(#g)"
+  />
+  <circle cx="33" cy="30" r="10" fill="#f4b57a" />
+  <path d="M28 104h72" stroke="#1d2433" stroke-width="6" stroke-linecap="round" />
+</svg>

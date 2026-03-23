@@ -1,0 +1,16 @@
+{
+  "name": "NYC Trip Planner",
+  "short_name": "NYC Trip",
+  "description": "Mobile-friendly bilingual trip planner for the NYC March 2026 itinerary.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#f4efe6",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>NYC Trip Planner | 2026.03.24 - 2026.03.27</title>
+    <meta
+      name="description"
+      content="The New Yorker Hotel 기준 3박 4일 뉴욕 여행 일정을 모바일에서 보기 쉽게 정리한 bilingual trip planner."
+    />
+    <link rel="canonical" href="https://sang-w00.github.io/nyc-trip-2026/" />
+    <meta name="theme-color" content="#f4efe6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NYC Trip Planner | 2026.03.24 - 2026.03.27" />
+    <meta
+      property="og:description"
+      content="A mobile-friendly bilingual trip planner for a 4-day NYC itinerary based at The New Yorker Hotel."
+    />
+    <meta property="og:url" content="https://sang-w00.github.io/nyc-trip-2026/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">NYC March Trip</p>
+          <h1 data-i18n="title">뉴욕 3박 4일 여행 플래너</h1>
+          <p class="hero-subtitle" data-i18n="subtitle">
+            2026년 3월 24일 화요일 - 3월 27일 금요일, The New Yorker Hotel 기준
+          </p>
+          <p class="hero-description" data-i18n="heroDescription">
+            도착부터 출국까지, 이동 동선과 티켓 포인트를 모바일에서 바로 확인할 수
+            있게 정리한 일정표입니다.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            type="button"
+            aria-live="polite"
+          ></button>
+          <a
+            class="quick-link"
+            id="shareButton"
+            href="#"
+            data-i18n="share"
+            >일정 공유</a
+          >
+        </div>
+
+        <div class="hero-glance" id="heroGlance"></div>
+      </header>
+
+      <nav class="day-nav" id="dayNav" aria-label="Trip days"></nav>
+
+      <main class="content">
+        <section class="panel-grid" id="essentialsPanel"></section>
+        <section class="panel-grid" id="costsPanel"></section>
+        <section class="schedule" id="schedule"></section>
+      </main>
+    </div>
+
+    <template id="daySectionTemplate">
+      <section class="day-section">
+        <div class="day-heading">
+          <div>
+            <p class="day-label"></p>
+            <h2></h2>
+          </div>
+          <p class="day-theme"></p>
+        </div>
+        <div class="event-list"></div>
+      </section>
+    </template>
+
+    <template id="eventCardTemplate">
+      <article class="event-card">
+        <div class="event-photo-frame">
+          <div class="event-photo"></div>
+          <div class="photo-badge" data-i18n="photoCredit">Photo via Wikipedia</div>
+        </div>
+        <div class="event-body">
+          <div class="event-topline">
+            <span class="event-time"></span>
+            <span class="event-kind"></span>
+          </div>
+          <h3 class="event-title"></h3>
+          <p class="event-location"></p>
+          <p class="event-detail"></p>
+          <div class="event-chips"></div>
+          <div class="event-actions">
+            <a class="event-link maps-link" target="_blank" rel="noreferrer noopener"></a>
+            <a
+              class="event-link photo-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            ></a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <noscript>
+      <div class="noscript">
+        This planner needs JavaScript to render the full itinerary.
+      </div>
+    </noscript>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
